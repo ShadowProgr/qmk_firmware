@@ -1,1 +1,2 @@
-SRC += shadowprogr.c
+SRC += shadowprogr.c \
+       process_records.c

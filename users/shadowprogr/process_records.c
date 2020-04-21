@@ -1,13 +1,6 @@
 #include "shadowprogr.h"
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-#ifdef SSD1306OLED
-  if (record->event.pressed) {
-    set_keylog(keycode, record);
-    // set_timelog();
-  }
-#endif
-
   switch (keycode) {
     case KC_P00:
       if (record->event.pressed) {
