@@ -7,8 +7,9 @@
   #include "lufa.h"
   #include "split_util.h"
 #endif
-#ifdef SSD1306OLED
+#ifdef OLED_DRIVER_ENABLE
   #include "ssd1306.h"
+  #include "oled.h"
 #endif
 
 // Layers
@@ -29,3 +30,6 @@ enum layers {
 
 // Mod-tap keys
 #define CTL_ESC MT(MOD_LCTL, KC_ESC)
+#define CTL_QUT MT(MOD_RCTL, KC_QUOT)
+#define CTL_SLS MT(MOD_RCTL, KC_SLSH)
+

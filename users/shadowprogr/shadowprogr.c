@@ -7,3 +7,7 @@ layer_state_t layer_state_set_user (layer_state_t state) {
 void keyboard_post_init_user() {
   layer_state_set_user(layer_state);
 }
+
+#ifdef OLED_DRIVER_ENABLE
+oled_rotation_t oled_init_user(oled_rotation_t rotation) { return OLED_ROTATION_0; }
+#endif
