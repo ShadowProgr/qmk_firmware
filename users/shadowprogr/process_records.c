@@ -1,5 +1,8 @@
 #include "shadowprogr.h"
 
+__attribute__((weak))
+bool process_record_keymap(uint16_t keycode, keyrecord_t *record) { return true; }
+
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
     case KC_P00:
@@ -13,17 +16,17 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       if (record->event.pressed) {
         set_single_persistent_default_layer(_QWERTY);
       }
-      return false;
+      break;
     case DVORAK:
       if (record->event.pressed) {
         set_single_persistent_default_layer(_DVORAK);
       }
-      return false;
+      break;
     case COLEMAK:
       if (record->event.pressed) {
         set_single_persistent_default_layer(_COLEMAK);
       }
-      return false;
+      break;
   }
-  return true;
+  return process_record_keymap(keycode, record);
 }
