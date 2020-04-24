@@ -2,11 +2,11 @@
 #include "shadowprogr.h"
 
 enum userspace_custom_keycodes {
-  // Layers
+  /* Layers */
   QWERTY = SAFE_RANGE,
   DVORAK,
   COLEMAK,
 
-  // Macros
+  /* Macros */
   KC_P00
 };
