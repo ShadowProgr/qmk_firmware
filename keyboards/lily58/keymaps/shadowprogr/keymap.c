@@ -262,10 +262,27 @@ void matrix_init_keymap(void) {
 
 void rgb_matrix_indicators_user(void) {
     led_t led_state = host_keyboard_led_state();
-    led_state.caps_lock ? rgb_matrix_set_color(24, 0, 255, 0) : rgb_matrix_set_color(24, 255, 0, 0);
-    if (isLeftHand) {
-
-    } else {
-        led_state.num_lock ? rgb_matrix_set_color(6, 0, 255, 0) : rgb_matrix_set_color(6, 255, 0, 0);
+    if (led_state.caps_lock) {
+        rgb_matrix_set_color(24, 0, 255, 0); // Only this works
+        rgb_matrix_set_color(59, 0, 255, 0); // This doesn't do work
     }
+    if (led_state.num_lock) {
+        rgb_matrix_set_color(41, 0, 255, 0); // This also doesn't
+    }
+
+    // Another approach, just testing things out
+    #if 0
+    if (led_state.caps_lock) {
+        rgb_matrix_set_color(24, 0, 255, 0); // This only works for the master (left half)
+    } else {
+        rgb_matrix_set_color(24, 255, 0, 0); // Right after flashing it sets both sides to red! But the slave side doesn't change after that, while master can still change depending on CAPSLOCK state
+    }
+    if (!isLeftHand) {
+        if (led_state.num_lock) {
+            rgb_matrix_set_color(6, 0, 255, 0); // Doesn't work
+        } else {
+            rgb_matrix_set_color(6, 255, 0, 0); // Same as above, sets to red once after flashing, doesn't work after
+        }
+    }
+    #endif
 }
