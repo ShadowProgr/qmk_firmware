@@ -1,6 +1,8 @@
 #pragma once
 
-
+// This prevents accentally sending Ctrl when typing fast
+#undef PERMISSIVE_HOLD
+#define IGNORE_MOD_TAP_INTERRUPT
 
 /* Set default TAPPING_TERM for all keyboards */
 #if defined(TAPPING_TERM)
