@@ -2,6 +2,7 @@
 
 #include "shadowprogr.h"
 
+// clang-format off
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_QWERTY] = LAYOUT( \
     /* ,-----------------------------------------------------.                         ,-----------------------------------------------------. */
@@ -130,7 +131,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     )
 */
 };
+// clang-format on
 
+// clang-format off
 #ifdef RGB_MATRIX_ENABLE
 led_config_t g_led_config = { {
     {  11,  10,   9,   8,   7,   6 },
@@ -167,10 +170,12 @@ led_config_t g_led_config = { {
     4, 4, 4, 1, 1, 1, 1
 } };
 #endif
+// clang-format off
 
 void matrix_init_keymap(void) {
 #ifdef RGB_MATRIX_ENABLE
     if (!isLeftHand) {
+        // clang-format off
         g_led_config = (led_config_t) { {
             {  46,  45,  44,  43,  42,  41 },
             {  47,  48,  49,  50,  51,  52 },
@@ -205,6 +210,7 @@ void matrix_init_keymap(void) {
             4, 4, 1, 1, 4, 4, 4,
             4, 4, 4, 1, 1, 1, 1
         } };
+        // clang-format off
     }
 #endif
 }
