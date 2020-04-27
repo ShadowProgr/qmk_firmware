@@ -23,12 +23,14 @@ enum layers {
     _LOWER,
     _RAISE,
     _ADJUST,
+    _RESCUE,
 };
 
 /* Layer keys */
 #define NUMPAD TG(_NUMPAD)
 #define LOWER LT(_LOWER, KC_ENT)
 #define RAISE LT(_RAISE, KC_ENT)
+#define RESCUE TG(_RESCUE)
 
 /* Mod-tap keys */
 #define CTL_ESC MT(MOD_LCTL, KC_ESC)
