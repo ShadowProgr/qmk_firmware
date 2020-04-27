@@ -1,8 +1,9 @@
 #pragma once
 
-/* This prevents mod taps from accidentally sending Ctrl when typing fast */
+/* This prevents mod taps from accidentally sending Ctrl when
+   typing too fast with certain keys */
+#define IGNORE_MOD_TAP_INTERRUPT_PER_KEY
 #undef PERMISSIVE_HOLD
-#define IGNORE_MOD_TAP_INTERRUPT
 
 /* Set default TAPPING_TERM for all keyboards */
 #if defined(TAPPING_TERM)

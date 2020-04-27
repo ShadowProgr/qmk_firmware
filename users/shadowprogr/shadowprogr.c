@@ -39,3 +39,14 @@ layer_state_t layer_state_set_user (layer_state_t state) {
 
     return layer_state_set_keymap(state);
 }
+
+bool get_ignore_mod_tap_interrupt(uint16_t keycode) {
+  switch (keycode) {
+    case CTL_QUT:
+      return true;
+    case CTL_SLS:
+      return true;
+    default:
+      return false;
+  }
+}
