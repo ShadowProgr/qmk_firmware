@@ -1,6 +1,6 @@
 #pragma once
 
-// This prevents accentally sending Ctrl when typing fast
+/* This prevents mod taps from accidentally sending Ctrl when typing fast */
 #undef PERMISSIVE_HOLD
 #define IGNORE_MOD_TAP_INTERRUPT
 
