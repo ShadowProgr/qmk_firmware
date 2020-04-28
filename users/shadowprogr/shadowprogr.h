@@ -11,6 +11,9 @@
     #include "ssd1306.h"
     #include "oled.h"
 #endif
+#if defined(RGB_MATRIX_ENABLE)
+#    include "rgb_matrix.h"
+#endif
 
 
 

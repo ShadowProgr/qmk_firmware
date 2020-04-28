@@ -42,3 +42,8 @@ endif
 ifeq ($(strip $(RGBLIGHT_ENABLE)), yes)
     SRC += rgb_light.c
 endif
+
+RGB_MATRIX_ENABLE ?= no
+ifneq ($(strip $(RGB_MATRIX_ENABLE)), no)
+    SRC += rgb_matrix.c
+endif
