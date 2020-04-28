@@ -21,15 +21,5 @@
 #endif
 
 /* Keyboard info */
-#undef VENDOR_ID
-#undef PRODUCT_ID
-#undef DEVICE_VER
-#undef MANUFACTURER
 #undef PRODUCT
-#undef DESCRIPTION
-#define VENDOR_ID 0xFEED
-#define PRODUCT_ID 0x1337
-#define DEVICE_VER 0x0100
-#define MANUFACTURER Ape
 #define PRODUCT ShadowProgr Lily58 Keyboard
-#define DESCRIPTION Ergonomic split keyboard
