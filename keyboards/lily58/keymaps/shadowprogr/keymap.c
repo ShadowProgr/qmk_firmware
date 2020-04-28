@@ -214,16 +214,3 @@ void matrix_init_keymap(void) {
     }
 #endif
 }
-
-#if 0 // WIP. Only enable for testing
-void rgb_matrix_indicators_user(void) {
-    led_t led_state = host_keyboard_led_state();
-    if (led_state.caps_lock) {
-        rgb_matrix_set_color(24, 0, 255, 0); // Only this works
-        rgb_matrix_set_color(59, 0, 255, 0); // This doesn't work
-    }
-    if (led_state.num_lock) {
-        rgb_matrix_set_color(41, 0, 255, 0); // This also doesn't
-    }
-}
-#endif
