@@ -3,12 +3,7 @@
 
 #include "process_records.h"
 
-#if defined(KEYBOARD_lily58_rev1) & defined(PROTOCOL_LUFA)
-    #include "lufa.h"
-    #include "split_util.h"
-#endif
 #if defined(OLED_DRIVER_ENABLE)
-    #include "ssd1306.h"
     #include "oled.h"
 #endif
 #if defined(RGB_MATRIX_ENABLE)
