@@ -3,11 +3,11 @@
 #include "shadowprogr.h"
 
 #if defined(PROTOCOL_LUFA)
-    #include "lufa.h"
-    #include "split_util.h"
+#    include "lufa.h"
+#    include "split_util.h"
 #endif
 #if defined(OLED_DRIVER_ENABLE)
-    #include "ssd1306.h"
+#    include "ssd1306.h"
 #endif
 
 // clang-format off

@@ -4,13 +4,11 @@
 #include "process_records.h"
 
 #if defined(OLED_DRIVER_ENABLE)
-    #include "oled.h"
+#    include "oled.h"
 #endif
 #if defined(RGB_MATRIX_ENABLE)
 #    include "rgb_matrix.h"
 #endif
-
-
 
 /* Layers */
 enum layers {
@@ -34,4 +32,3 @@ enum layers {
 #define CTL_ESC MT(MOD_LCTL, KC_ESC)
 #define CTL_QUT MT(MOD_RCTL, KC_QUOT)
 #define CTL_SLS MT(MOD_RCTL, KC_SLSH)
-
