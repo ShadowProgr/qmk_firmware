@@ -18,11 +18,6 @@ void keyboard_post_init_user() { keyboard_post_init_keymap(); }
 
 layer_state_t layer_state_set_user(layer_state_t state) {
     state = update_tri_layer_state(state, _LOWER, _RAISE, _ADJUST);
-
-#if defined(RGBLIGHT_ENABLE)
-    state = layer_state_set_rgb_light(state);
-#endif
-
     return layer_state_set_keymap(state);
 }
 

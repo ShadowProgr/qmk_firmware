@@ -6,6 +6,9 @@
 #if defined(OLED_DRIVER_ENABLE)
 #    include "oled.h"
 #endif
+#if defined(RGBLIGHT_ENABLE)
+#    include "rgb_light.h"
+#endif
 #if defined(RGB_MATRIX_ENABLE)
 #    include "rgb_matrix.h"
 #endif
