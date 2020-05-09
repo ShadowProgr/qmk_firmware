@@ -2,6 +2,7 @@
 #include QMK_KEYBOARD_H
 
 #include "process_records.h"
+#include "wrappers.h"
 
 #if defined(OLED_DRIVER_ENABLE)
 #    include "oled.h"
