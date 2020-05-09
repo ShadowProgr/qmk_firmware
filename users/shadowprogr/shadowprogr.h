@@ -27,7 +27,7 @@ enum layers {
 
 /* Layer keys */
 #define NUMPAD TG(_NUMPAD)
-#define LOWER LT(_LOWER, KC_ENT)
+#define LOWER LT(_LOWER, KC_DEL)
 #define RAISE LT(_RAISE, KC_ENT)
 #define RESCUE TG(_RESCUE)
 
