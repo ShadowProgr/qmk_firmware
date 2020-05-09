@@ -61,7 +61,7 @@
 
 #define _________________LOWER_R1__________________ KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN
 #define _________________LOWER_R2__________________ _______, KC_UNDS, KC_PLUS, KC_LCBR, KC_RCBR
-#define _________________LOWER_R3__________________ _______, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT
+#define _________________LOWER_R3__________________ _______, KC_MINS, KC_EQL,  KC_LBRC, KC_RBRC
 
 /* Raise blocks */
 #define _________________RAISE_L1__________________ ________________NUMBER_LEFT________________
