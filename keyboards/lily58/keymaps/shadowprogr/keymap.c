@@ -52,7 +52,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _____________________DISABLED_______________________,                           XXXXXXX, ____________NUMPAD_R1_____________, XXXXXXX, \
         _____________________DISABLED_______________________,                           XXXXXXX, ____________NUMPAD_R2_____________, XXXXXXX, \
         _____________________DISABLED_______________________, XXXXXXX,         XXXXXXX, XXXXXXX, ____________NUMPAD_R3_____________, KC_PENT, \
-                                   _______DISABLED__________, _______,         _______, _______, XXXXXXX, _______                             \
+                                   ____________DISABLED______________,         _______, _______, XXXXXXX, _______                             \
     ),
 
     [_LOWER] = LAYOUT_wrapper( \
