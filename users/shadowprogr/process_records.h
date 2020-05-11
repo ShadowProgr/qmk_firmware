@@ -6,6 +6,7 @@ enum userspace_custom_keycodes {
   QWERTY = SAFE_RANGE,
   DVORAK,
   COLEMAK,
+  QWERTY_OVERLAY,
 
   /* Macros */
   KC_P00
