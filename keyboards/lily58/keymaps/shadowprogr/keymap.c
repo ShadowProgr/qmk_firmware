@@ -21,7 +21,7 @@
     KC_TAB,  K01,     K02,     K03,     K04,     K05,                               K06,     K07,     K08,     K09,     K0A,     KC_BSLS, \
     CTL_ESC, K11,     K12,     K13,     K14,     K15,                               K16,     K17,     K18,     K19,     K1A,     K1B,     \
     KC_LSFT, K21,     K22,     K23,     K24,     K25,     KC_MINS,         KC_EQL,  K26,     K27,     K28,     K29,     K2A,     KC_RSFT, \
-                               KC_LALT, KC_LGUI, KC_SPC,  LOWER,           RAISE,   KC_BSPC, KC_RGUI, NUMPAD                              \
+                               KC_LALT, KC_LGUI, KC_SPC,  LT_LWR,          LT_RSE,  KC_BSPC, KC_RGUI, NUMPAD                              \
   )
 // clang-format on
 
@@ -84,7 +84,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         EEP_RST, _________________ADJUST_L1_________________,                           _________________ADJUST_R1_________________, XXXXXXX, \
         RESET,   _________________ADJUST_L2_________________,                           _________________ADJUST_R2_________________, XXXXXXX, \
         XXXXXXX, _________________ADJUST_L3_________________, XXXXXXX,         XXXXXXX, _________________ADJUST_R3_________________, XXXXXXX, \
-                                   ____________DISABLED______________,         ____________DISABLED______________                             \
+                                   _______DISABLED__________, _______,         _______, _______DISABLED__________                             \
     ),
 
     [_RESCUE] = LAYOUT_wrapper( \

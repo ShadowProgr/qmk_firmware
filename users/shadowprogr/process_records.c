@@ -5,6 +5,12 @@ __attribute__((weak)) bool process_record_keymap(uint16_t keycode, keyrecord_t *
 
 /* Global, userspace functions that apply to all my keymaps */
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+    static my_lt_data_t lwr_data;
+    static my_lt_data_t rse_data;
+
+    process_my_lt(keycode, record, LT_LWR, _LOWER, KC_ENT, &lwr_data);
+    process_my_lt(keycode, record, LT_RSE, _RAISE, KC_DEL, &rse_data);
+
     switch (keycode) {
         /* Macros */
         case KC_P00:  // Send 2 KC_P0 in a row

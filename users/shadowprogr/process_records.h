@@ -9,5 +9,7 @@ enum userspace_custom_keycodes {
   QWERTY_OVERLAY,
 
   /* Macros */
-  KC_P00
+  KC_P00,
+  LT_LWR,
+  LT_RSE
 };

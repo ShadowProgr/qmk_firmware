@@ -33,7 +33,8 @@ UNICODEMAP_ENABLE				= no
 UNICODE_ENABLE					= no
 
 SRC += shadowprogr.c \
-       process_records.c
+       process_records.c \
+	   my_lt.c
 
 ifeq ($(strip $(OLED_DRIVER_ENABLE)), yes)
     SRC += oled.c
