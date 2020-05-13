@@ -11,8 +11,8 @@
 /* Set default TAPPING_TERM for all keyboards */
 #if defined(TAPPING_TERM)
 #    undef TAPPING_TERM
-#    define TAPPING_TERM 200
 #endif
+#define TAPPING_TERM 200
 
 /* Set default step and limit for all keyboards with RGB underlight */
 #if defined(RGBLIGHT_ENABLE)
