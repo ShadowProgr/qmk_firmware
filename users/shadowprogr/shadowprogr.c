@@ -43,6 +43,12 @@ void matrix_scan_user(void) {
 }
 
 layer_state_t layer_state_set_user(layer_state_t state) {
+    if (layer_state_is(_NUMPAD)) {
+        led_t led_state = host_keyboard_led_state();
+        if (!led_state.num_lock) {
+            tap_code(KC_NLCK);
+        }
+    }
     state = update_tri_layer_state(state, _LOWER, _RAISE, _ADJUST);
     return layer_state_set_keymap(state);
 }
