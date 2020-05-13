@@ -20,7 +20,6 @@ enum layers {
     _QWERTY,
     _DVORAK,
     _COLEMAK,
-    _QWERTY_OVERLAY,
     _NUMPAD,
     _LOWER,
     _RAISE,
@@ -29,12 +28,10 @@ enum layers {
 };
 
 /* Layer keys */
-#define NUMPAD TG(_NUMPAD)
-#define LOWER LT(_LOWER, KC_ENT)
-#define RAISE LT(_RAISE, KC_DEL)
-#define RESCUE TG(_RESCUE)
+#define TG_NUMP TG(_NUMPAD)
+#define TG_RESC TG(_RESCUE)
 
 /* Mod-tap keys */
-#define CTL_ESC MT(MOD_LCTL, KC_ESC)
-#define CTL_QUT MT(MOD_RCTL, KC_QUOT)
-#define CTL_SLS MT(MOD_RCTL, KC_SLSH)
+#define MT_CT_E MT(MOD_LCTL, KC_ESC)
+#define MT_CT_Q MT(MOD_RCTL, KC_QUOT)
+#define MT_CT_S MT(MOD_RCTL, KC_SLSH)

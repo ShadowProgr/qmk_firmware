@@ -5,6 +5,9 @@
 #define IGNORE_MOD_TAP_INTERRUPT_PER_KEY
 #undef PERMISSIVE_HOLD
 
+#define LEADER_TIMEOUT 250
+#define LEADER_PER_KEY_TIMING
+
 /* Set default TAPPING_TERM for all keyboards */
 #if defined(TAPPING_TERM)
 #    undef TAPPING_TERM
