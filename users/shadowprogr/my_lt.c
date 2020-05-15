@@ -1,4 +1,5 @@
-/* Shamelessly copied @sigprof code */
+/* Custom implementation of LT()
+   Shamelessly copied from @sigprof code */
 #include "shadowprogr.h"
 
 void process_my_lt(uint16_t keycode, keyrecord_t *record, uint16_t lt_kc, uint8_t layer, uint16_t tap_kc, my_lt_data_t *data) {
